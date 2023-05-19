@@ -28,8 +28,8 @@ app.post("/compile", function (req, res) {
                     if (data.output) {
                         res.send(data);
                     }
-                    else {
-                        res.send({ output: "error" })
+                    else if(data.error){
+                        res.send(data)
                     }
                 });
             }
@@ -39,8 +39,8 @@ app.post("/compile", function (req, res) {
                     if (data.output) {
                         res.send(data);
                     }
-                    else {
-                        res.send({ output: "error" })
+                    else if(data.error){
+                        res.send(data)
                     }
                 });
             }
@@ -52,8 +52,8 @@ app.post("/compile", function (req, res) {
                     if (data.output) {
                         res.send(data);
                     }
-                    else {
-                        res.send({ output: "error" })
+                    else if(data.error){
+                        res.send(data)
                     }
                 })
             }
@@ -65,8 +65,8 @@ app.post("/compile", function (req, res) {
                     if (data.output) {
                         res.send(data);
                     }
-                    else {
-                        res.send({ output: "error" })
+                    else if(data.error){
+                        res.send(data)
                     }
                 })
             }
@@ -78,8 +78,8 @@ app.post("/compile", function (req, res) {
                     if (data.output) {
                         res.send(data);
                     }
-                    else {
-                        res.send({ output: "error" })
+                    else if(data.error) {
+                        res.send(data)
                     }
                 });
             }
@@ -89,8 +89,8 @@ app.post("/compile", function (req, res) {
                     if (data.output) {
                         res.send(data);
                     }
-                    else {
-                        res.send({ output: "error" })
+                    else if(data.error) {
+                        res.send(data)
                     }
                 });
             }

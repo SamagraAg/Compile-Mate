@@ -159,7 +159,11 @@ body:JSON.stringify(code)
             body: JSON.stringify(code)
         })
         var d = await oData.json()
-        output.value = d.output
+        if (d.error) {
+            output.value = d.error
+        }
+        else if (d.output)
+            output.value = d.output
     })
 </script>
 
